@@ -21,7 +21,7 @@ void solve(){
             dp[j] = min(dp[j], dp[c[i]] + dp[j-c[i]]);
         } 
     } 
-    long long ans = dp[x] >= INF ? -1 : dp[x];
+    int ans = dp[x] >= INF ? -1 : dp[x];
     cout<<ans<<"\n";
 }
 
